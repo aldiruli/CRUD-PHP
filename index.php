@@ -27,11 +27,12 @@
                   while ($data =mysqli_fetch_array($con)) {
                   ?>
                   <tr>
-                    <td><?= $data['nama']?></td>
-                    <td><?= $data['nim']?></td>
-                    <td><?= $data['ipk']?></td>
-                    <td><?= $data['smt']?></td>
-                    <td><a href="config/delete.php?d=<?= $data['nim'] ?>">Hapus</a></td>
+                    <td><?php echo $data['nama']?></td>
+                    <td><?php echo $data['nim']?></td>
+                    <td><?php echo $data['ipk']?></td>
+                    <td><?php echo $data['smt']?></td>
+                    <td><a href="config/delete.php?d=<?= $data['nim'] ?>">Hapus</a>
+                        || <a href="edit.php?d=<?= $data['nim'] ?>">Edit</a></td>
                   </tr>
                 <?php } ?>
               </table>
