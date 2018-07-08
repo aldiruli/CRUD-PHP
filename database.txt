@@ -1,6 +1,0 @@
-Database : mhs;
-Table : mhs;
-Isi Table mhs : nama  : varchar;
-                nim   : char(8);
-                ipk   : float;
-                smt   : char(2);
